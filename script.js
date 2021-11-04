@@ -1,6 +1,14 @@
-
 function compute()
 {
+
+    var principal = document.getElementById("principal").value;
+
+    if(principal =  principal <= 0)
+    {
+        alert("Enter a positive number");
+        document.getElementById("principal").focus();
+        return;
+    }
     p = document.getElementById("principal").value;
     r = document.getElementById("rate").value;
     n = document.getElementById("years").value;
